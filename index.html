@@ -1,0 +1,177 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/28d5d455c6.js" crossorigin="anonymous"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <i class="fa-brands fa-instagram"></i><strong class="ms-2">Instagram</strong>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <button type="button" class="btn btn-success ms-auto me-2 justify-content-end" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" data-bs-whatever="">Create a new post</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Caption:</label>
+                                        <textarea class="form-control" placeholder="Add the caption of your post here"
+                                            id="message-text"></textarea>
+                                    </div>
+                                </form>
+                                <button type="button" class="btn btn-light border border-dark"> <i
+                                        class="fa-solid fa-camera"></i></button>
+                                <button type="button" class="btn btn-light border border-dark"><i
+                                        class="fa-solid fa-location-dot"></i></button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="btn btn-secondary  dropdown-toggle" href="#" id="navbardropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- BOTONES -->
+    <p class="d-flex justify-content-center">
+        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#fila" aria-expanded="false">
+            <i class="fa-solid fa-table-cells"></i>
+        </button>
+        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#columna" aria-expanded="true">
+            <i class="fa-solid fa-square"></i>
+        </button>
+    </p>
+    <div class="accordion" id="contenedorImagenes">
+        <!-- IMÁGENES -->
+        <div class="accordion-collapse collapse" id="fila" data-bs-parent="#contenedorImagenes">
+            <div class="card-body d-flex justify-content-center">
+                <div class="row text-center">
+                    <div class="col-md-" style="width: 20rem;">
+                        <img src="https://www.viajarmiami.com/img/playas-miami.jpg"
+                            class="img-fluid mb-3" alt="Imagen 1">
+                    </div>
+                    <div class="col-md-4" style="width: 20rem;">
+                        <img src="https://plus.unsplash.com/premium_photo-1668456012219-e3299fd0307e?q=80&w=3542&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="img-fluid  mb-3" alt="Imagen 2">
+                    </div>
+                    <div class="col-md-4" style="width: 20rem;">
+                        <img src="https://cdn.pixabay.com/photo/2020/05/15/14/17/water-5173774_1280.jpg"
+                            class="img-fluid  mb-3" alt="Imagen 3">
+                    </div>
+                </div>
+            </div>
+            <div class="card-body d-flex justify-content-center">
+                <div class="row text-center">
+                    <div class="col-md-" style="width: 20rem;">
+                        <img src="https://www.univision.com/proxy/api/cached/picture?href=https%3A%2F%2Fuvn-brightspot.s3.amazonaws.com%2Fassets%2Fvixes%2Fimj%2Fl%2Flas_ciudades_mas_hermosas_en_la_noche.jpg&width=0&height=0&ratio_width=1240&ratio_height=698&format=webp"
+                            class="img-fluid mb-3" alt="Imagen 1">
+                    </div>
+                    <div class="col-md-4" style="width: 20rem;">
+                        <img src="https://www.univision.com/proxy/api/cached/picture?href=https%3A%2F%2Fuvn-brightspot.s3.amazonaws.com%2Fassets%2Fvixes%2Fimj%2Fl%2Flas_ciudades_mas_hermosas_en_la_noche2.jpg&width=0&height=0&ratio_width=1240&ratio_height=698&format=webp"
+                            class="img-fluid  mb-3" alt="Imagen 2">
+                    </div>
+                    <div class="col-md-4" style="width: 20rem;">
+                        <img src="https://www.univision.com/proxy/api/cached/picture?href=https%3A%2F%2Fuvn-brightspot.s3.amazonaws.com%2Fassets%2Fvixes%2Fimj%2Fl%2Flas_ciudades_mas_hermosas_en_la_noche4.jpg&width=0&height=0&ratio_width=1240&ratio_height=698&format=webp"
+                            class="img-fluid  mb-3" alt="Imagen 3">
+                    </div>
+                </div>
+            </div>
+            <div class="card-body d-flex justify-content-center">
+                <div class="row text-center">
+                    <div class="col-md-" style="width: 20rem;">
+                        <img src="https://media.istockphoto.com/id/1403500817/es/foto/los-craggies-en-las-monta%C3%B1as-blue-ridge.jpg?s=2048x2048&w=is&k=20&c=UIIW9vuMM7-n_ygy3IeBhDO0dZE0KqOhyw6NsgJ1Xoc="
+                            class="img-fluid mb-3" alt="Imagen 1">
+                    </div>
+                    <div class="col-md-4" style="width: 20rem;">
+                        <img src="https://media.istockphoto.com/id/1484902508/es/foto/drop-in-time-fairy-lake-tree-port-renfrew-isla-de-vancouver-bc-canad%C3%A1.jpg?s=2048x2048&w=is&k=20&c=wS6R_3uPPSphm7MOXroBBwXTZJdp2O8tLZYM53AWL1o="
+                            class="img-fluid  mb-3" alt="Imagen 2">
+                    </div>
+                    <div class="col-md-4" style="width: 20rem;">
+                        <img src="https://media.istockphoto.com/id/1162998855/es/foto/el-sol-se-pone-detr%C3%A1s-del-bosque-oto%C3%B1al.jpg?s=2048x2048&w=is&k=20&c=PTfuZdeCEJJ3y66dYGbFroQD7cpXHzZOMDvVSFwD4V4="
+                            class="img-fluid  mb-3" alt="Imagen 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-collapse collapse show" id="columna" data-bs-parent="#contenedorImagenes">
+            <div class="card-body d-flex flex-column align-items-center gap-3">
+                <!-- Tarjeta 1 -->
+                <div class="card" style="width: 25rem;">
+                    <p class="mt-1 ms-1"><strong>Animales</strong></p>
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgomOCnQu-FFHPRIx3DVvw2iy57EEIqbqi9TkINZ25ts4Rwo1qVVJHlZbPht8vl5qEso_PChFbS1p1ryKv1rTbbF4XVSlb8NFm6XGibtK17fmljynR_iXFqG30ai064Gyfjg4NQ6c5YdVI/s320/animalis.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <p class="d-flex ms-1"><strong>50k Likes</strong></p>
+                        <p class="card-text">Enfocamos nuestros esfuerzos de conservación en especies como tigres, rinocerontes, ballenas y tortugas marinas, cuya protección influye y apoya la supervivencia de otras especies y al mismo tiempo brinda la oportunidad de proteger entornos terrestres o áreas marinas.</p>
+                    </div>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="card" style="width: 25rem;">
+                    <p class="mt-1 ms-1"><strong>Espacio</strong></p>
+                    <img src="https://rahhal.com/wp-content/uploads/2020/05/astronauta-espacio.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <p class="d-flex ms-1"><strong>20K Likes</strong></p>
+                        <p class="card-text">El espacio exterior, en términos generales, se define como el área más allá de la atmósfera terrestre, donde no hay atmósfera para respirar y la gravedad es significativamente menor</p>
+                    </div>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="card" style="width: 25rem;">
+                    <p class="mt-1 ms-1"><strong>Naturaleza</strong></p>
+                    <img src="https://www.esteveteijin.com/wp-content/uploads/2022/04/pexels-pixabay-163703-1920x1080.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <p class="d-flex ms-1"><strong>12k Likes</strong></p>
+                        <p class="d-flex ms-1 card-text">La naturaleza, en su infinita diversidad, es un regalo precioso para todos. Desde las vastas extensiones de los océanos hasta las montañas majestuosas y los silenciosos bosques, nos brinda un sinfín de maravillas naturales. Cada rincón de la naturaleza tiene su propia belleza y encanto, esperando a ser descubierto. 
+                        
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
